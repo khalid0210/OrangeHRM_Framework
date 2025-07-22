@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CommonsFunctions {
+	//CommonsFunctions
 	public static WebDriver driver=null;
 	public static Properties properties=null;
 	static Logger logger=Logger.getLogger(CommonsFunctions.class);
