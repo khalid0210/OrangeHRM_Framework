@@ -28,6 +28,7 @@ public class CommonsFunctions {
 		Properties properties=new Properties();
 		properties.load(file);
 		return properties;
+		
 	}
 	
 	@BeforeSuite
