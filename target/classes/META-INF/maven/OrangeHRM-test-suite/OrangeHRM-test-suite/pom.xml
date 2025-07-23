@@ -123,8 +123,6 @@
     </plugin>
   </plugins>
 
-  <!-- Add this to treat main as test folder -->
-  <testSourceDirectory>src/main/java</testSourceDirectory>
 
 </build>
 
