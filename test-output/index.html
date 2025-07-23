@@ -103,12 +103,12 @@
                     <div class="method-list-content passed suite-HRM_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-HRM_Test_Suite" title="testCases.Test_UserRole" class="method navigator-link" hash-for-method="adminActions">adminActions</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-HRM_Test_Suite" title="testCases.Test_UserRole_Test" class="method navigator-link" hash-for-method="adminActions">adminActions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-HRM_Test_Suite" title="testCases.Test_Pending_Leave_Request" class="method navigator-link" hash-for-method="verifyPendingLeaveRequest">verifyPendingLeaveRequest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-HRM_Test_Suite" title="testCases.Test_Pending_Leave_Request_Test" class="method navigator-link" hash-for-method="verifyPendingLeaveRequest">verifyPendingLeaveRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-HRM_Test_Suite -->
@@ -126,7 +126,7 @@
           <div class="suite-HRM_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.Test_Pending_Leave_Request</span>
+              <span class="class-name">testCases.Test_Pending_Leave_Request_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -141,7 +141,7 @@
           <div class="suite-HRM_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCases.Test_UserRole</span>
+              <span class="class-name">testCases.Test_UserRole_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -165,12 +165,12 @@
 &lt;suite name=&quot;HRM Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Pending Leave Request Test Case&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Test_Pending_Leave_Request&quot;/&gt;
+      &lt;class name=&quot;testCases.Test_Pending_Leave_Request_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Pending Leave Request Test Case --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Check User Role Test Case&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Test_UserRole&quot;/&gt;
+      &lt;class name=&quot;testCases.Test_UserRole_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Check User Role Test Case --&gt;
 &lt;/suite&gt; &lt;!-- HRM Test Suite --&gt;
@@ -216,17 +216,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyPendingLeaveRequest')
-data.setCell(0, 2, 'testCases.Test_Pending_Leave_Request')
-data.setCell(0, 3, 6944);
+data.setCell(0, 2, 'testCases.Test_Pending_Leave_Request_Test')
+data.setCell(0, 3, 5314);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'adminActions')
-data.setCell(1, 2, 'testCases.Test_UserRole')
-data.setCell(1, 3, 4479);
+data.setCell(1, 2, 'testCases.Test_UserRole_Test')
+data.setCell(1, 3, 3837);
 window.suiteTableData['HRM_Test_Suite']= { tableData: data, tableDiv: 'times-div-HRM_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-HRM_Test_Suite">
               </div> <!-- times-div-HRM_Test_Suite -->
             </div> <!-- times-div -->
@@ -252,28 +252,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Test_UserRole</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Test_UserRole_Test</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Test_Pending_Leave_Request</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Test_Pending_Leave_Request_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyPendingLeaveRequest</span>
-                <span class="method-start">12037 ms</span>
+                <span class="method-start">7029 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Test_UserRole</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Test_UserRole_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">adminActions</span>
-                <span class="method-start">19006 ms</span>
+                <span class="method-start">12364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23494 ms</span>
+                <span class="method-start">16212 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

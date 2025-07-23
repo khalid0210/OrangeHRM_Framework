@@ -3,14 +3,14 @@
 
 <test name="Pending Leave Request Test Case">
 <classes>
-<class name="testCases.Test_Pending_Leave_Request">
+<class name="testCases.Test_Pending_Leave_Request_Test">
 </class>
 </classes>
 </test>
 
 <test name="Check User Role Test Case">
 <classes>
-<class name="testCases.Test_UserRole">
+<class name="testCases.Test_UserRole_Test">
 </class>
 </classes>
 </test>

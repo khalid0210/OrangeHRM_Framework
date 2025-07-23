@@ -13,11 +13,11 @@ import commonFunctions.CommonsFunctions;
 import pageObjects.Dashboard_Page_Object_Model;
 import pageObjects.Login_Page_Object_Model;
 
-public class Test_Pending_Leave_Request extends CommonsFunctions{
+public class Test_Pending_Leave_Request_Test extends CommonsFunctions{
 	Login_Page_Object_Model login;
 	Dashboard_Page_Object_Model dashboard ;
 	String message;
-	static Logger logger=Logger.getLogger(Test_Pending_Leave_Request.class);
+	static Logger logger=Logger.getLogger(Test_Pending_Leave_Request_Test.class);
 	
 	public void login() {
 		logger.info("Logging into the application");

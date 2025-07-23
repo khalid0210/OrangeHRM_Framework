@@ -13,11 +13,11 @@ import pageObjects.Dashboard_Page_Object_Model;
 import pageObjects.Login_Page_Object_Model;
 import pageObjects.UserRole_Page_Object_Model;
 
-public class Test_UserRole extends CommonsFunctions{
+public class Test_UserRole_Test extends CommonsFunctions{
 	
 	UserRole_Page_Object_Model userRole;
 	
-	static Logger logger=Logger.getLogger(Test_UserRole.class);
+	static Logger logger=Logger.getLogger(Test_UserRole_Test.class);
 	@Test
 	public void adminActions() {
 		
