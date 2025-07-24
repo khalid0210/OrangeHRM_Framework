@@ -12,15 +12,4 @@
       </class> <!-- testCases.Test_Pending_Leave_Request_Test -->
     </classes>
   </test> <!-- Pending Leave Request Test Case(failed) -->
-  <test thread-count="5" name="Check User Role Test Case(failed)">
-    <classes>
-      <class name="testCases.Test_UserRole_Test">
-        <methods>
-          <include name="tearDown"/>
-          <include name="launchBrowser"/>
-          <include name="adminActions"/>
-        </methods>
-      </class> <!-- testCases.Test_UserRole_Test -->
-    </classes>
-  </test> <!-- Check User Role Test Case(failed) -->
 </suite> <!-- Failed suite [HRM Test Suite] -->

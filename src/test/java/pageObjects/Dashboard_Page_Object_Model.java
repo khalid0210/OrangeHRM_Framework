@@ -9,7 +9,7 @@ public class Dashboard_Page_Object_Model {
 	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div/div[4]")
 	public static WebElement applyLeave;
 	
-	@FindBy(xpath="//p[@class='oxd-text oxd-text--p oxd-text--subtitle-2']")
+	@FindBy(xpath="//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/p")
 	public static WebElement leaveType;
 
 }
