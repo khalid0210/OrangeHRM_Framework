@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-24T22:24:27 IST" name="HRM Test Suite" finished-at="2025-07-24T22:24:41 IST" duration-ms="13202">
+  <suite started-at="2025-07-25T10:02:45 IST" name="HRM Test Suite" finished-at="2025-07-25T10:02:53 IST" duration-ms="8241">
     <groups>
     </groups>
-    <test started-at="2025-07-24T22:24:27 IST" name="Pending Leave Request Test Case" finished-at="2025-07-24T22:24:35 IST" duration-ms="7943">
+    <test started-at="2025-07-25T10:02:45 IST" name="Pending Leave Request Test Case" finished-at="2025-07-25T10:02:49 IST" duration-ms="4063">
       <class name="testCases.Test_Pending_Leave_Request_Test">
-        <test-method signature="verifyPendingLeaveRequest()[pri:0, instance:testCases.Test_Pending_Leave_Request_Test@7dfd3c81]" started-at="2025-07-24T22:24:27 IST" name="verifyPendingLeaveRequest" finished-at="2025-07-24T22:24:35 IST" duration-ms="7831" status="PASS">
+        <test-method signature="verifyPendingLeaveRequest()[pri:0, instance:testCases.Test_Pending_Leave_Request_Test@6a4f1a55]" started-at="2025-07-25T10:02:45 IST" name="verifyPendingLeaveRequest" finished-at="2025-07-25T10:02:49 IST" duration-ms="4021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPendingLeaveRequest -->
       </class> <!-- testCases.Test_Pending_Leave_Request_Test -->
     </test> <!-- Pending Leave Request Test Case -->
-    <test started-at="2025-07-24T22:24:35 IST" name="Check User Role Test Case" finished-at="2025-07-24T22:24:41 IST" duration-ms="5202">
+    <test started-at="2025-07-25T10:02:49 IST" name="Check User Role Test Case" finished-at="2025-07-25T10:02:53 IST" duration-ms="4142">
       <class name="testCases.Test_UserRole_Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.Test_UserRole_Test@13526e59]" started-at="2025-07-24T22:24:18 IST" name="launchBrowser" finished-at="2025-07-24T22:24:27 IST" duration-ms="9064" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testCases.Test_UserRole_Test@503f91c3]" started-at="2025-07-25T10:02:37 IST" name="launchBrowser" finished-at="2025-07-25T10:02:45 IST" duration-ms="7647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="adminActions()[pri:0, instance:testCases.Test_UserRole_Test@13526e59]" started-at="2025-07-24T22:24:35 IST" name="adminActions" finished-at="2025-07-24T22:24:41 IST" duration-ms="5187" status="PASS">
+        <test-method signature="adminActions()[pri:0, instance:testCases.Test_UserRole_Test@503f91c3]" started-at="2025-07-25T10:02:49 IST" name="adminActions" finished-at="2025-07-25T10:02:53 IST" duration-ms="4137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminActions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Test_UserRole_Test@13526e59]" started-at="2025-07-24T22:24:41 IST" name="tearDown" finished-at="2025-07-24T22:24:42 IST" duration-ms="946" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Test_UserRole_Test@503f91c3]" started-at="2025-07-25T10:02:53 IST" name="tearDown" finished-at="2025-07-25T10:02:53 IST" duration-ms="546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

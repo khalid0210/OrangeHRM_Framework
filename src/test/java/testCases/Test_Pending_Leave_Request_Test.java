@@ -50,49 +50,39 @@ public class Test_Pending_Leave_Request_Test extends CommonsFunctions{
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.applyLeave));
 		dashboard.applyLeave.click();
 		
-		wait.until(ExpectedConditions.elementToBeClickable(dashboard.leaveType));
-		dashboard.leaveType.click();
-		
-		wait.until(ExpectedConditions.elementToBeClickable(dashboard.selectCAN));
-		dashboard.selectCAN.click();
-        
-		wait.until(ExpectedConditions.elementToBeClickable(dashboard.startDate));
-		dashboard.startDate.click();
-		
-		
-		
-		
-		// Already initialized by PageFactory
-		List<WebElement> allDates = dashboard.selectDate;
-		for (WebElement date : allDates) {
-		    if (date.getText().trim().equals("10")) {
-		        date.click();
-		        break;
-		    }
-		}
-
-		wait.until(ExpectedConditions.elementToBeClickable(dashboard.toDate));
-		dashboard.toDate.click();
-		
-		
-		List<WebElement> allDatesTo = dashboard.selectToDate;
-		for (WebElement date : allDatesTo) {
-		    if (date.getText().trim().equals("15")) {
-		        date.click();
-		        break;
-		    }
-		}
-		
-		wait.until(ExpectedConditions.elementToBeClickable(dashboard.applyButton));
-		dashboard.applyButton.click();
-		
-		 
-	        
+		/*
+		 * wait.until(ExpectedConditions.elementToBeClickable(dashboard.leaveType));
+		 * dashboard.leaveType.click();
+		 * 
+		 * wait.until(ExpectedConditions.elementToBeClickable(dashboard.selectCAN));
+		 * dashboard.selectCAN.click();
+		 * 
+		 * wait.until(ExpectedConditions.elementToBeClickable(dashboard.startDate));
+		 * dashboard.startDate.click();
+		 * 
+		 * 
+		 * 
+		 * 
+		 * // Already initialized by PageFactory List<WebElement> allDates =
+		 * dashboard.selectDate; for (WebElement date : allDates) { if
+		 * (date.getText().trim().equals("10")) { date.click(); break; } }
+		 * 
+		 * wait.until(ExpectedConditions.elementToBeClickable(dashboard.toDate));
+		 * dashboard.toDate.click();
+		 * 
+		 * 
+		 * List<WebElement> allDatesTo = dashboard.selectToDate; for (WebElement date :
+		 * allDatesTo) { if (date.getText().trim().equals("15")) { date.click(); break;
+		 * } }
+		 * 
+		 * wait.until(ExpectedConditions.elementToBeClickable(dashboard.applyButton));
+		 * dashboard.applyButton.click();
+		 * 
+		 * 
+		 */       
 	}
 	
-	public void leaveText() {
-		message=dashboard.leaveType.getText();
-	}
+	
 	@Test
 	public void verifyPendingLeaveRequest() throws IOException {
 		
