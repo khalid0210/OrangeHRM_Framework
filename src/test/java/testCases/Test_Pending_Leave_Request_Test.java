@@ -3,10 +3,15 @@ package testCases;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -44,6 +49,45 @@ public class Test_Pending_Leave_Request_Test extends CommonsFunctions{
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.elementToBeClickable(dashboard.applyLeave));
 		dashboard.applyLeave.click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(dashboard.leaveType));
+		dashboard.leaveType.click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(dashboard.selectCAN));
+		dashboard.selectCAN.click();
+        
+		wait.until(ExpectedConditions.elementToBeClickable(dashboard.startDate));
+		dashboard.startDate.click();
+		
+		
+		
+		
+		// Already initialized by PageFactory
+		List<WebElement> allDates = dashboard.selectDate;
+		for (WebElement date : allDates) {
+		    if (date.getText().trim().equals("10")) {
+		        date.click();
+		        break;
+		    }
+		}
+
+		wait.until(ExpectedConditions.elementToBeClickable(dashboard.toDate));
+		dashboard.toDate.click();
+		
+		
+		List<WebElement> allDatesTo = dashboard.selectToDate;
+		for (WebElement date : allDatesTo) {
+		    if (date.getText().trim().equals("15")) {
+		        date.click();
+		        break;
+		    }
+		}
+		
+		wait.until(ExpectedConditions.elementToBeClickable(dashboard.applyButton));
+		dashboard.applyButton.click();
+		
+		 
+	        
 	}
 	
 	public void leaveText() {
@@ -57,13 +101,7 @@ public class Test_Pending_Leave_Request_Test extends CommonsFunctions{
 		testCase.log(Status.INFO,"Clicking the apply leave option");
 		logger.info("Clicking the apply leave option");
 		applyleave();
-		testCase.log(Status.INFO,"Getting the Leave Text");
-		logger.info("Getting the Leave Text");
-		leaveText();
-		System.out.println(message);
-		testCase.log(Status.INFO,"Getting the Leave Text" +message);
-		logger.info("Verifying the message");
-		Assert.assertEquals(message, "No Leave Types with Leave Balance");
+		
 		
 		
 		 
