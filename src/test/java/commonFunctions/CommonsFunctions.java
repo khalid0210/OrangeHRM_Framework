@@ -49,6 +49,7 @@ public class CommonsFunctions {
 		
 		extentReport=new ExtentReports();
 		htmlReporter=new ExtentSparkReporter("test-output/ExtentReport/extent-report.html");
+		htmlReporter.config().setOfflineMode(true);
 		extentReport.attachReporter(htmlReporter);
 		
 		if(browser.equalsIgnoreCase("chrome")) {
