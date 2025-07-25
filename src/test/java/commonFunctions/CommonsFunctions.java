@@ -48,7 +48,7 @@ public class CommonsFunctions {
 		String url=properties.getProperty("URL");
 		
 		extentReport=new ExtentReports();
-		htmlReporter=new ExtentSparkReporter("extent-report.html");
+		htmlReporter=new ExtentSparkReporter("test-output/ExtentReport/extent-report.html");
 		extentReport.attachReporter(htmlReporter);
 		
 		if(browser.equalsIgnoreCase("chrome")) {
