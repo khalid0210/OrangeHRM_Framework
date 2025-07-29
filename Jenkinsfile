@@ -14,7 +14,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                bat 'mvn clean install -DskipTests'
             }
         }
 
@@ -55,10 +55,27 @@ pipeline {
 <p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
 <p><b>Last Commit:</b> ${env.GIT_COMMIT}</p>
 <p><b>Branch:</b> ${env.GIT_BRANCH}</p>
-<p><b>Build log is attached.</b></p>
-<p><b>Extent Report (if available):</b> <a href="http://localhost:8080/job/OrangeHRM_Test_Suite/HTML_20Extent_20Report/">Click here</a></p>
-<p>Best regards,</p>
-<p><b>Automation Team</b></p>
+<p><b>Extent Report:</b> <a href="http://localhost:8080/job/OrangeHRM_Test_Suite/HTML_20Extent_20Report/">Click here</a></p>
+<p>Best regards,<br><b>Automation Team</b></p>
+</body>
+</html>''',
+                mimeType: 'text/html',
+                attachLog: true
+            )
+        }
+
+        failure {
+            emailext (
+                to: 'khalithsheik@gmail.com',
+                subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: '''<html>
+<body>
+<p>Hello Team,</p>
+<p>The latest Jenkins build has <span style="color:red;"><b>FAILED</b></span>.</p>
+<p><b>Project:</b> ${env.JOB_NAME}</p>
+<p><b>Build Number:</b> ${env.BUILD_NUMBER}</p>
+<p><b>Build URL:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
+<p>Please review the build logs for more details.</p>
 </body>
 </html>''',
                 mimeType: 'text/html',
